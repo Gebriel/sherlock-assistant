@@ -1,0 +1,31 @@
+CASE TITLE: The Red Creek Gallery Heist
+DATE: June 04, 2026
+OFFICER IN CHARGE: Sergeant Sarah Jenkins
+
+SUMMARY:
+Investigation into the theft of 'The Crimson Horizon' painting from the Red Creek Modern Art Gallery. The theft occurred during a private gala between 2000 and 2200 hours.
+
+SUSPECTS:
+
+Arthur Penhaligon: Wealthy collector who publicly expressed obsession with the piece.
+
+Clara Whitlock: Head curator. Recently argued with the gallery board regarding insurance payouts.
+
+Dominic Glass: Professional art restorer. He was the last person to handle the painting before it was mounted.
+
+WITNESS STATEMENTS:
+
+Dominic Glass: "I checked the mounting brackets at 19:30. Everything was secure. I spent the rest of the evening in the lobby greeting guests."
+
+Arthur Penhaligon: "I was in the sculpture garden having a cigar from 20:30 until the gala ended. I never stepped foot near the painting."
+
+PHYSICAL CLUES:
+
+A damp footprint with traces of red clay found near the emergency exit.
+
+A discarded pair of white latex gloves found in a trash bin, containing traces of oil paint.
+
+A broken silver cufflink found directly beneath the empty frame.
+
+SUSPICIOUS DETAILS:
+A major inconsistency involves Arthur Penhaligon's statement. While he claimed to be in the garden, the red clay found at the crime scene is unique to the construction site currently active in the gallery's basement—an area Penhaligon had no permission to access. Additionally, Clara Whitlock claimed the security cameras were disabled by a power surge, but the gallery’s digital logs show a manual override was initiated from her personal workstation five minutes before the theft.

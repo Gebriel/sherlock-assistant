@@ -1,0 +1,31 @@
+CASE TITLE: The Silver Hollow Ledger
+DATE: May 12, 2026
+OFFICER IN CHARGE: Detective Marcus Thorne
+
+SUMMARY:
+At 0800 hours, patrol officers responded to a reported break-in at the Silver Hollow Accounting firm. Senior partner Elias Sterling reported the theft of a secure ledger containing private client assets.
+
+SUSPECTS:
+
+Julian Vane: Junior accountant recently passed over for promotion. Known for high gambling debts.
+
+Elena Moretti: Night shift janitor. Has keys to all office suites and was on duty during the time of the theft.
+
+Silas Thorne: Business rival and former partner. Observed in the parking lot two hours before the alarm.
+
+WITNESS STATEMENTS:
+
+Elias Sterling: "I locked the ledger in the floor safe at 1800 hours. The digital lock showed no signs of tampering when I arrived this morning, but the safe was empty."
+
+Elena Moretti: "I was on the fourth floor all night. I didn't see anyone enter the executive suite, but I did hear the service elevator chime around midnight."
+
+PHYSICAL CLUES:
+
+A single strand of blue silk fiber caught on the corner of the mahogany desk.
+
+A faint scent of expensive, clove-scented tobacco lingering in the air-tight vault room.
+
+A smudge of graphite on the safe’s keypad, specifically over the digits 3, 7, and 9.
+
+SUSPICIOUS DETAILS:
+The primary contradiction lies in Julian Vane’s alibi. Vane claimed to be at the 'Midnight Lounge' until 0200 hours; however, surveillance footage from a nearby street shows a vehicle matching his description leaving the Silver Hollow lot at 00:15 hours. Furthermore, Elias Sterling noted the safe was untouched, yet the graphite smudge suggests a manual code entry, which should have triggered a silent alert that never occurred.

@@ -1,0 +1,108 @@
+Case 1 — The Silver Hollow Ledger
+
+  Q: Who are the suspects in the Silver Hollow case?
+  A: Julian Vane, Elena Moretti, and Silas Thorne
+
+  Q: What was stolen from Silver Hollow Accounting?
+  A: A secure ledger containing private client assets
+
+  Q: What did Elias Sterling say about the safe when he arrived?
+  A: The digital lock showed no signs of tampering but the safe was empty
+
+  Q: Which digits had a graphite smudge on the safe's keypad?
+  A: The digits 3, 7, and 9
+
+  Q: What was caught on the corner of the mahogany desk?
+  A: A single strand of blue silk fiber
+
+  Q: What smell was detected inside the vault room?
+  A: A faint scent of expensive, clove-scented tobacco
+
+  Q: Why is Julian Vane's alibi suspicious?
+  A: He claimed to be at the Midnight Lounge until 0200, but surveillance footage shows a vehicle matching his leaving the Silver Hollow lot at 00:15
+
+
+Case 2 — The Red Creek Gallery Heist
+
+  Q: What painting was stolen from the Red Creek Gallery?
+  A: "The Crimson Horizon"
+
+  Q: Who was the last person to handle the painting before it was mounted?
+  A: Dominic Glass, who checked the mounting brackets at 19:30
+
+  Q: What was Arthur Penhaligon's alibi during the theft?
+  A: He claimed to be in the sculpture garden having a cigar from 20:30 until the gala ended
+
+  Q: What type of soil was found in the footprint near the emergency exit?
+  A: Red clay, unique to the construction site in the gallery's basement
+
+  Q: What was found in the trash bin near the crime scene?
+  A: A discarded pair of white latex gloves containing traces of oil paint
+
+  Q: What was found directly beneath the empty frame?
+  A: A broken silver cufflink
+
+  Q: What did the gallery's digital logs reveal about the security cameras?
+  A: A manual override was initiated from Clara Whitlock's personal workstation five minutes before the theft
+
+
+Case 3 — The Midnight Pier Fire
+
+  Q: What business was destroyed in the Pier 42 fire?
+  A: The primary office of Maritime Logistics
+
+  Q: Who are the suspects in the Midnight Pier Fire case?
+  A: Gregory Vance, Linda Sterling, and Marcus Thorne
+
+  Q: Where was the melted gasoline canister found?
+  A: Near the office's ventilation intake
+
+  Q: What initials were engraved on the gold-plated lighter recovered from the debris?
+  A: L.S.
+
+  Q: What was found on the discarded work boots in the nearby dumpster?
+  A: Traces of high-grade marine diesel
+
+  Q: Why is Marcus Thorne's alibi physically impossible?
+  A: Meteorological records show heavy fog reduced visibility to under fifty yards at 2300 hours; he could not have seen smoke from two miles offshore
+
+  Q: Why does the lighter found near the north exit raise doubts about Linda Sterling?
+  A: The north exit had been welded shut for maintenance months earlier, making it an unlikely escape route for a legitimate employee
+
+
+Case 4 — The Gilded Fountain Poisoning
+
+  Q: Who was the victim in the Gilded Fountain Poisoning?
+  A: Winston Gable, a billionaire philanthropist
+
+  Q: What did toxicology reports confirm about the punch bowl?
+  A: The presence of a fast-acting neurotoxin
+
+  Q: Who are the suspects in the poisoning case?
+  A: Victor Gable, Dr. Aris Thorne, and Sophia Vane
+
+  Q: Where exactly was the empty glass vial found?
+  A: Tucked behind a decorative curtain near the beverage station
+
+  Q: What was found on the rim of the crystal glass under the head table?
+  A: A residue of fine white powder
+
+  Q: Why does the purple stain on Victor Gable's handkerchief contradict his statement?
+  A: He claimed he never touched the punch, but the stain matches the specific chemical dye used in the Gala Grape punch served that evening
+
+  Q: What gap was found in Sophia Vane's alibi?
+  A: Security footage shows a four-minute window where she left the beverage station unattended to take a phone call in the hallway
+
+
+Cross-case & unanswerable (should return "I don't have enough evidence to answer that.")
+
+  - Was Gregory Vance related to Detective Leo Vance who led the Midnight Pier Fire case?
+  - Did Linda Sterling know Elias Sterling from the Silver Hollow ledger theft?
+  - Who is the killer in the Midnight Pier Fire?
+  - What is the name of the neurotoxin used to poison Winston Gable?
+  - Did Victor Gable have an accomplice?
+  - What happened to The Crimson Horizon after it was stolen?
+  - Was Julian Vane ever arrested?
+  - How much money was represented in the stolen ledger?
+  - Did Winston Gable survive the poisoning?
+  - What was Dr. Aris Thorne's alibi during the gala?
