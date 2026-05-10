@@ -6,7 +6,7 @@ from agno.vectordb.chroma import ChromaDb
 
 from .config import CHROMA_DIR, HF_TOKEN
 
-os.environ["HF_TOKEN"] = HF_TOKEN
+os.environ["HF_TOKEN"] = HF_TOKEN #because HuggingfaceCustomEmbedder reads the token from the HF_TOKEN environment variable
 
 os.makedirs(CHROMA_DIR, exist_ok=True)
 

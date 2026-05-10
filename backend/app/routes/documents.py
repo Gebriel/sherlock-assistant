@@ -21,11 +21,11 @@ def is_valid_file(data):
         return False
 
 
-@router.post("/documentts")
+@router.post("/documents")
 async def upload_document(file: UploadFile, auth: str = Depends(require_authentication)):
     data = await file.read()
     if not is_valid_file(data):
-        raise HTTPException(status_code=400, detail="Invalid file type")
+        raise HTTPException(status_code=415, detail="Invalid file type, Only pdf and plain text files")
     
     os.makedirs(UPLOAD_DIR, exist_ok=True)
     file_path = os.path.join(UPLOAD_DIR, file.filename)
@@ -42,7 +42,7 @@ async def upload_document(file: UploadFile, auth: str = Depends(require_authenti
     return {"filename": file.filename}
 
 @router.get("/documents")
-def get_documents_list(auth: str = Depends(require_authentication)):
+def get_documents_list(_= Depends(require_authentication)):
     if not os.path.exists(UPLOAD_DIR):
         return {"documents": []}
     
@@ -51,3 +51,14 @@ def get_documents_list(auth: str = Depends(require_authentication)):
         if not f.startswith("."):
             files.append(f)
     return {"documents": files}
+
+
+@router.delete("/documents/{filename}")
+def delete_document(filename, _=Depends(require_authentication)):
+    file_path = os.path.join(UPLOAD_DIR, filename)
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail="File not found")
+    
+    knowledge.delete_knowledge(filename)
+    os.remove(file_path)
+    return {"deleted": filename}

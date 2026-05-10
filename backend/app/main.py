@@ -6,7 +6,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from .auth import login
-from .routes import documents
+from .routes import documents, query
 
 app = FastAPI(title="Sherlock Backend API")
 
@@ -31,3 +31,4 @@ def auth_login(req: LoginRequest):
 
 
 app.include_router(documents.router, prefix="/api")
+app.include_router(query.router, prefix="/api")

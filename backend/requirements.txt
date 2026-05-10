@@ -6,3 +6,4 @@ filetype
 pypdf
 huggingface_hub
 chromadb
+google-genai
