@@ -10,6 +10,7 @@ client = TestClient(app)
 def auth_header():
     return {"Authorization": "Bearer sherlock-token"}
 
+# Test authentication
 
 def test_login_success():
     res = client.post(
