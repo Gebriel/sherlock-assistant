@@ -7,3 +7,7 @@ pypdf
 huggingface_hub
 chromadb
 google-genai
+uvicorn[standard]
+openai
+httpx
+python-multipart
