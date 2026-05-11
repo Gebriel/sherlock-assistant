@@ -20,7 +20,7 @@ vector_db = ChromaDb(
 
 knowledge = Knowledge(name="case_files", vector_db=vector_db)
 
-def add_knowledge(filepath, filename):
+def ingest(filepath, filename):
     knowledge.insert(name=filename, path=filepath, skip_if_exists=True)
 
 

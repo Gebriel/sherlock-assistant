@@ -33,7 +33,7 @@ async def upload_document(file: UploadFile, auth: str = Depends(require_authenti
     with open(file_path, "wb") as f:
         f.write(data)
     try:
-        knowledge.add_knowledge(file_path, file.filename)
+        knowledge.ingest(file_path, file.filename)
     except Exception as e:
         os.remove(file_path)
         raise HTTPException(status_code=500, detail=f"Filed to process file: {e}")
