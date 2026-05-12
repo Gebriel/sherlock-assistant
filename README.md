@@ -2,6 +2,8 @@
 
 A RAG-based document intelligence system. Upload PDF and text case files, then ask questions about them in natural language. Answers come strictly from the uploaded documents, the system will not guess or use outside knowledge.
 
+![Sherlock](docs/screenshot.png)
+
 ## Tech Stack
 
 - **Backend:** FastAPI, Agno, ChromaDB, Gemini 2.5 Flash
