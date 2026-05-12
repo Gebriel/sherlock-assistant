@@ -32,3 +32,8 @@ def auth_login(req: LoginRequest):
 
 app.include_router(documents.router, prefix="/api")
 app.include_router(query.router, prefix="/api")
+
+
+# to runn the frontend from the same container as static files, must be mounted last
+if os.path.exists("static"):
+    app.mount("/", StaticFiles(directory="static", html=True), name="static")

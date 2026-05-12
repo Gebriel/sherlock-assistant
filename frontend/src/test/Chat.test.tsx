@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react"
 import { describe, it, expect } from "vitest"
 import Chat from "@/components/Chat"
 
-describe("QueryChat", () => {
+describe("Chat", () => {
   it("renders the empty state message", () => {
     render(<Chat />)
     expect(

@@ -35,8 +35,8 @@ async def upload_document(file: UploadFile, auth: str = Depends(require_authenti
     try:
         knowledge.ingest(file_path, file.filename)
     except Exception as e:
-        os.remove(file_path)
-        raise HTTPException(status_code=500, detail=f"Filed to process file: {e}")
+        os.remove(file_path) # remove saved file if ingestion into ChromaDB fails
+        raise HTTPException(status_code=500, detail=f"Failed to process file: {e}")
 
 
     return {"filename": file.filename}

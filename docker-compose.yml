@@ -1,0 +1,11 @@
+services:
+  sherlock:
+    build: .
+    env_file: .env
+    volumes:
+      - app_data:/data
+    ports:
+      - "8000:8000"
+
+volumes:
+  app_data:

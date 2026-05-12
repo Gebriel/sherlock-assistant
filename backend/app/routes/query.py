@@ -25,7 +25,7 @@ agent = Agent(
         "When possible, cite which case file your answer comes from.",
         "Do not narrate your search process. Never say things like 'Let me search' or 'I will look'. Go straight to the answer.",
     ],
-    markdown=False,
+    markdown=True,
 )
 
 
@@ -35,5 +35,4 @@ def query(req: QueryRequest, _=Depends(require_authentication)):
         raise HTTPException(status_code=400, detail="Something wrong with the question")
 
     response: RunOutput = agent.run(req.question, stream=False)
-    answer = getattr(response, "content", None) or str(response)
-    return {"answer": answer}
+    return {"answer": response.content}
