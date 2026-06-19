@@ -55,7 +55,10 @@ def get_documents_list(_= Depends(require_authentication)):
 
 @router.delete("/documents/{filename}")
 def delete_document(filename, _=Depends(require_authentication)):
-    file_path = os.path.join(UPLOAD_DIR, filename)
+    file_path = os.path.realpath(os.path.join(UPLOAD_DIR, filename))
+    if not file_path.startswith(os.path.realpath(UPLOAD_DIR) + os.sep):
+        raise HTTPException(status_code=400, detail="Invalid filename")
+    
     if not os.path.exists(file_path):
         raise HTTPException(status_code=404, detail="File not found")
     
