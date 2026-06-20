@@ -1,6 +1,6 @@
 import os
 
-from agno.knowledge.embedder.huggingface import HuggingfaceCustomEmbedder
+from agno.knowledge.embedder.google import GeminiEmbedder
 from agno.knowledge.knowledge import Knowledge
 from agno.vectordb.chroma import ChromaDb
 
@@ -12,7 +12,7 @@ vector_db = ChromaDb(
     collection= 'case_files',
     path=CHROMA_DIR,
     persistent_client=True,
-    embedder=HuggingfaceCustomEmbedder()
+    embedder=GeminiEmbedder()
 )
 
 

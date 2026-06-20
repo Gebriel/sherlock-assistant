@@ -7,17 +7,18 @@ A RAG-based document intelligence system. Upload PDF and text case files, then a
 ## Tech Stack
 
 - **Backend:** FastAPI, Agno, ChromaDB, Gemini 2.5 Flash
-- **Embeddings:** Hugging Face Inference API
+- **Embeddings:** Gemini Embedding API
 - **Frontend:** React, Vite, TypeScript, Tailwind v4, shadcn
 - **Deployment:** Docker
 
 ## Requirements
 
 - Docker and Docker Compose
-- A Google AI API key (for the LLM)
-- A Hugging Face token (for embeddings)
+- A Google AI API key (for the LLM and embeddings)
 
 ## Setup
+
+### Local development
 
 1. Copy the example env file and fill in your keys:
 
@@ -29,10 +30,17 @@ cp .env.example .env
 
 ```
 GOOGLE_API_KEY=your_google_api_key
-HF_TOKEN=your_huggingface_token
 ```
 
 The `USERNAME` and `PASSWORD` fields control who can log in. Defaults are `detective` and `sherlock`.
+
+### Docker
+
+```bash
+cp .env.docker .env
+```
+
+Then open `.env` and set `GOOGLE_API_KEY`.
 
 ## Running
 
@@ -49,6 +57,32 @@ Then open http://localhost:8000 in your browser.
 3. Ask questions about the uploaded files in the chat
 4. To remove a file, click Delete next to it in the sidebar
 
+## API
+
+All endpoints require an `Authorization: Bearer sherlock-token` header except `/api/auth/login`.
+
+### Auth
+
+| Method | Endpoint | Body | Response |
+|--------|----------|------|----------|
+| `POST` | `/api/auth/login` | `{"username": "...", "password": "..."}` | `{"token": "sherlock-token"}` |
+
+### Documents
+
+| Method | Endpoint | Body | Response |
+|--------|----------|------|----------|
+| `POST` | `/api/documents` | `multipart/form-data` with `file` field | `{"filename": "file.pdf"}` |
+| `GET` | `/api/documents` | — | `{"documents": ["file.pdf", ...]}` |
+| `DELETE` | `/api/documents/{filename}` | — | `{"deleted": "file.pdf"}` |
+
+Accepted file types: PDF and plain text.
+
+### Query
+
+| Method | Endpoint | Body | Response |
+|--------|----------|------|----------|
+| `POST` | `/api/query` | `{"question": "..."}` | `{"answer": "..."}` |
+
 ## Samples
 
 The `samples/` directory contains test files I used during development: two plain text files, two PDFs, and a `tests.txt` file with sample questions to ask against the documents.
@@ -58,7 +92,6 @@ The `samples/` directory contains test files I used during development: two plai
 ## API Keys
 
 - **Google AI API key**: get one at https://aistudio.google.com/app/apikey
-- **Hugging Face token**: get one at https://huggingface.co/settings/tokens (Read access is enough)
 
 ## Running locally without Docker
 
